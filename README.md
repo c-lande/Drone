@@ -3,6 +3,7 @@
 Dette er en app som ble utviklet for norske droneflygere. Formålet med dette var at de skulle få oversikt om det er lovlig å fly drone der de befinner seg, samt å få oversikt over vær og vindforhold.
 
 Noen verktøy som ble tatt i bruk:
+
 FIGMA: https://www.figma.com/proto/zRqEwsusFqoenrE9R6eOhy/Prototype-1?node-id=1%3A3&scaling=scale-down
 
 Frost: 
