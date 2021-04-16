@@ -1,6 +1,6 @@
 # Drone app
 
-Dette er en app som ble utviklet for norske droneflygere. Formålet med dette var at de skulle få oversikt om det er lovlig å fly drone der de befinner seg, samt å få oversikt over vær og vindforhold.
+Dette er en app som ble utviklet for norske droneflygere. Formålet med dette var at de skulle få oversikt om det er lovlig å fly drone der de befinner seg, samt å få oversikt over vær og vindforhold. Jeg lastet opp en rapport som forklarer appen detaljert. 
 
 Noen verktøy som ble tatt i bruk:
 
