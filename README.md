@@ -1,10 +1,9 @@
-# Team40
+# Drone app
 
-SLACK: https://in2000gruppe40.slack.com/  
-Google DRIVE: https://drive.google.com/drive/folders/1d4EgE9rDdVLh9b2tDpEdTXUu_ai7LcDl  
-JIRA: https://in2000gruppe40.atlassian.net/secure/RapidBoard.jspa  
+Dette er en app som ble utviklet for norske droneflygere. Formålet med dette var at de skulle få oversikt om det er lovlig å fly drone der de befinner seg, samt å få oversikt over vær og vindforhold.
+
+Noen verktøy som ble tatt i bruk:
 FIGMA: https://www.figma.com/proto/zRqEwsusFqoenrE9R6eOhy/Prototype-1?node-id=1%3A3&scaling=scale-down
-
 
 Frost: 
 - https://in2000-frostproxy.ifi.uio.no/ex_userquest
