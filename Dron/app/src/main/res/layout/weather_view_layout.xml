@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:weightSum="14">
+
+    <ImageButton
+        android:id="@+id/Search"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:layout_weight="2"
+        android:padding="0dp"
+        android:background="@android:color/white"
+        android:src="@mipmap/search_icon"
+        android:contentDescription="@string/searchButton" />
+
+    <!-- Display layer -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3.75">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/WindSymbol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/wind_icon"
+                android:layout_weight="2"
+                android:contentDescription="@string/windsymbol" />
+
+            <TextView
+                android:id="@+id/WindValue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/WindValueText"
+                android:layout_weight="4"/>
+
+            <ImageView
+                android:id="@+id/WindDirection"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/s_e_arrow_icon"
+                android:layout_weight="2"
+                android:contentDescription="@string/winddirectionsymbol" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8">
+
+            <ImageView
+                android:id="@+id/RainSymbol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/rain_icon"
+                android:contentDescription="@string/raindsymbol" />
+
+            <TextView
+                android:id="@+id/RainValue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:text="@string/RainValue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="3.75">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <ImageView
+                android:id="@+id/FogSymbol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/fog_icon"
+                android:layout_weight="2"
+                android:contentDescription="@string/fogsymbol" />
+
+            <TextView
+                android:id="@+id/FogValue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:text="@string/FogValue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <ImageView
+                android:id="@+id/TempratureSymbol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/temp_icon"
+                android:layout_weight="2"
+                android:contentDescription="@string/temperaturesymbol" />
+
+            <TextView
+                android:id="@+id/TempratureValue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:text="@string/TempratureValue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="2.5">
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <ImageView
+                android:id="@+id/SunriseSymbol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/sunrise"
+                android:layout_weight="3"
+                android:contentDescription="@string/sundownsymbol" />
+
+            <TextView
+                android:id="@+id/SunriseValue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="@string/SundownValue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="8">
+            <ImageView
+                android:id="@+id/SundownSymbol"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:src="@mipmap/sundown_icon"
+                android:layout_weight="3"
+                android:contentDescription="@string/sundownsymbol" />
+
+            <TextView
+                android:id="@+id/SunsetValue"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:text="@string/SundownValue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ImageButton
+        android:id="@+id/Settings"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:adjustViewBounds="true"
+        android:background="@android:color/white"
+        android:onClick="openSettingsActivity"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/settings_icon"
+        android:contentDescription="@string/settingssymbol" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,7 @@
+<!-- Linked to WeatherView -->
+<resources>
+    <!-- Formats for attrebutes-->
+    <declare-styleable name="WeatherView">
+
+    </declare-styleable>
+</resources>

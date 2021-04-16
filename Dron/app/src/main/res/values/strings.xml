@@ -1,0 +1,59 @@
+<resources>
+    <!-- General App Information -->
+    <string name="app_name">NorFly</string>
+
+    <!-- Display Text -->
+    <!-- User Warning and information -->
+    <string name="WarningTxtNo">
+            Advarseltekst for bruk av droneapp på norsk.
+            Skriv tekst her;
+        </string>
+    <string name="WarningTxtEng">
+            Warningtekst for users of drone-app in english.
+            Write tekst here;
+        </string>
+
+    <!-- View Information -->
+    <!-- Base value == n/a; Format String -->
+    <string name="WindValueText">%1$s ms</string>
+    <string name="RainValue">%1$s mm/t</string>
+    <string name="SundownValue">n/a</string>
+    <string name="TempratureValue">n/a</string>
+    <string name="FogValue">n/a</string>
+
+    <!-- Map related information -->
+    <string name="mapbox_access_token">pk.eyJ1IjoiYWtzZWxrZiIsImEiOiJjazg1djlzaTEwYjAxM2ZtYzh4a2NiaW11In0.UObcPI10eaVCi42pxlJDxg</string>
+    <string name="open_map">Åpne kart</string>
+    <string name="open_map2">Åpne mapBox</string>
+    <string name="searchButton">Søk etter sted</string>
+    <string name="windsymbol">WindSymbol</string>
+    <string name="winddirectionsymbol">windDirectionSymbol</string>
+    <string name="raindsymbol">raindSymbol</string>
+    <string name="fogsymbol">fogSymbol</string>
+    <string name="temperaturesymbol">temperatureSymbol</string>
+    <string name="sundownsymbol">sunDownSymbol</string>
+    <string name="settingssymbol">settingsSymbol</string>
+
+    <!--Logikk knapper-->
+    <string name="bruk">Bruk</string>
+    <string name="avbryt">Avbryt</string>
+    <string name="ok">Godkjenn</string>
+
+    <!--Settings-->
+    <string name="justeringerTitle">Justeringer</string>
+    <string name="innstillingerTitle">Innstillinger</string>
+    <string name="vindToleranseText">Vindtoleranse</string>
+    <string name="reinToleranseText">Regntoleranse</string>
+    <string name="siktToleranseText">Sikttoleranse</string>
+    <string name="noValue">n/a</string>
+    <string name="fargerTitle">Farger</string>
+    <string name="fargeKnapp">bytt farge</string>
+    <string name="ulovligeSonerText">Ulovlige Soner</string>
+    <string name="risikoSonerText">Risiko Soner</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Ukjent">Ukjent</string>
+
+
+</resources>

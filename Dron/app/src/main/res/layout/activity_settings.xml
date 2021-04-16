@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SettingsLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <!--Tittel-->
+    <TextView
+        android:id="@+id/InnstillingerTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/innstillingerTitle"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--Justeringer-->
+    <RelativeLayout
+        android:id="@+id/Justeringer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/InnstillingerTitle">
+
+        <TextView
+            android:id="@+id/justeringerTittel"
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:layout_marginHorizontal="10sp"
+            android:text="@string/justeringerTitle"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" /> <!-- Tittel-->
+
+        <!--WindSeekBar-->
+        <TextView
+            android:id="@+id/windSeekBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginVertical="5sp"
+            android:text="@string/vindToleranseText"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/justeringerTittel" />
+        <SeekBar
+            android:id="@+id/windSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginVertical="5sp"
+            android:max="300"
+            android:progress="0"
+            android:progressTint="@color/colorPrimaryDark"
+            android:layout_below="@+id/windSeekBarText" />
+        <TextView
+            android:id="@+id/windSeekBarTextDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginVertical="5sp"
+            android:text="@string/noValue"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/justeringerTittel"
+            android:layout_alignParentRight="true"/>
+
+        <!--RainSeekBar-->
+        <TextView
+            android:id="@+id/rainSeekBarText"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginVertical="5sp"
+            android:text="@string/reinToleranseText"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/windSeekBar"/>
+        <SeekBar
+            android:id="@+id/rainSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginVertical="5sp"
+            android:max="100"
+            android:progress="0"
+            android:progressTint="@color/colorPrimaryDark"
+            android:layout_below="@id/rainSeekBarText"/>
+        <TextView
+            android:id="@+id/rainSeekBarTextDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginVertical="5sp"
+            android:text="@string/noValue"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/windSeekBar"
+            android:layout_alignParentRight="true"/>
+
+        <!--FogSeekBar-->
+        <TextView
+            android:id="@+id/fogSeekBarText"
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginVertical="5sp"
+            android:text="@string/siktToleranseText"
+            android:textSize="20sp"
+            android:layout_below="@id/rainSeekBar"/>
+        <SeekBar
+            android:id="@+id/fogSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_marginVertical="5sp"
+            android:max="1000"
+            android:progress="0"
+            android:progressTint="@color/colorPrimaryDark"
+            android:layout_below="@id/fogSeekBarText" />
+        <TextView
+            android:id="@+id/fogSeekBarTextDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginHorizontal="10sp"
+            android:layout_marginVertical="5sp"
+            android:text="@string/noValue"
+            android:textSize="20sp"
+            android:layout_below="@+id/rainSeekBar"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <!--Farger
+    <RelativeLayout
+        android:id="@+id/Farger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Justeringer"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginVertical="5sp">
+
+                <TextView
+                    android:id="@+id/fargerTittel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fargerTitle"
+                    android:layout_marginVertical="5sp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"/>
+
+        Ulovlige soner
+        <TextView
+            android:id="@+id/ulovligeSonerText"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:text="@string/ulovligeSonerText"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_marginVertical="5sp"
+            android:layout_below="@+id/fargerTittel"/>
+        <ImageButton
+            android:id="@+id/ulovligeSoner"
+            android:background="@android:color/black"
+            android:layout_width="25dp"
+            android:layout_height="25sp"
+            android:layout_margin="5sp"
+            android:layout_below="@+id/fargerTittel"
+            android:layout_toLeftOf="@+id/ulovligeSonerKnapp"/>
+        <Button
+            android:id="@+id/ulovligeSonerKnapp"
+            android:layout_width="wrap_content"
+            android:layout_height="35sp"
+            android:paddingVertical="0sp"
+            android:text="@string/fargeKnapp"
+            android:textSize="15sp"
+            android:layout_below="@+id/fargerTittel"
+            android:layout_alignParentRight="true"/>
+
+        <!-Risiko Soner
+        <TextView
+            android:id="@+id/risikoSonerText"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:layout_marginVertical="5sp"
+            android:text="@string/risikoSonerText"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/ulovligeSoner"/>
+        <ImageButton
+            android:id="@+id/risikoSoner"
+            android:background="@android:color/black"
+            android:layout_width="25sp"
+            android:layout_height="25sp"
+            android:layout_margin="5sp"
+            android:layout_toLeftOf="@id/risikoSonerKnapp"
+            android:layout_below="@+id/ulovligeSoner"/>
+        <Button
+            android:id="@+id/risikoSonerKnapp"
+            android:layout_width="wrap_content"
+            android:layout_height="35sp"
+            android:text="@string/fargeKnapp"
+            android:paddingVertical="0sp"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ulovligeSoner"/>
+    </RelativeLayout>
+    -->
+
+    <Button
+        android:id="@+id/SettingsGodkjenn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="@string/ok"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/SettingsAvbryt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        android:text="@string/avbryt"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/SettingsGodkjenn"/>
+</RelativeLayout>
