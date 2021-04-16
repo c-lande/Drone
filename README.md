@@ -5,6 +5,7 @@ Dette er en app som ble utviklet for norske droneflygere. Formålet med dette va
 Noen verktøy som ble tatt i bruk:
 
 FIGMA: 
+
 https://www.figma.com/proto/zRqEwsusFqoenrE9R6eOhy/Prototype-1?node-id=1%3A3&scaling=scale-down
 
 Frost: 
